@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> linear-gradient 컬러 효과</title>
+
+    <style>
+        .customColor{ height: 100px; width: 100px;}
+
+      /*linear-gradient(to 방향 또는 각도 , 시작색상, 끝색상 )
+         방향은 right left top bottom , 각도는 deg으로 끝나는 지점을 표현 ex) 45도는 45deg */
+        .box1{ background: linear-gradient(to right top, red, blue);}
+        .box2{ background: linear-gradient(to left bottom, red, blue);}
+        .box3{ background: linear-gradient(to left, red, blue);}
+        .box4{ background: linear-gradient(to top, red, blue);}
+
+        .box5{ background: linear-gradient(45deg, yellow, blue);}
+        .box6{ background: linear-gradient(45deg, yellow, red 40%, blue);}
+        .box7{ background: linear-gradient(to bottom, green, white 50%, green);}
+  
+        /*   radial-gradient 원형그러데이션 
+        형식: linear-gradient( 모양 크기 at 위치 , 색상 )
+        모양: 타원형 eclipse , 원형 circle 
+        모양 지정없다면 디폴트 기본값은 타원형 eclipse 이다.  */
+        .customColor2{ height:100px; width:200px;}
+        .circle1{ background: radial-gradient(white, yellow, red);}
+        .circle2{ background: radial-gradient(circle, white, yellow, red);}
+    </style>
+</head>
+<body>
+    
+<div class="customColor box1"></div>
+<div class="customColor box2"></div>
+<div class="customColor box3"></div>
+<div class="customColor box4"></div> <br>
+
+<div class="customColor box5"></div>
+<div class="customColor box6"></div>
+<div class="customColor box7"></div> <br>
+
+<div class="customColor2 circle1"></div>
+<div class="customColor2 circle2"></div>
+
+</body>
+</html>
